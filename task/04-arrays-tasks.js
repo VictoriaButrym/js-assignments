@@ -109,7 +109,7 @@ function getArrayOfStrings(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
-   let newarr = arr.filter(Boolean)
+   let newarr = arr.filter(Boolean);
    return newarr
     
 }
