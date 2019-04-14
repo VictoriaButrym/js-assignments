@@ -30,7 +30,7 @@
  *
  */
 function getFizzBuzz(num) {
-    /*if (num % 3 == 0){
+    if (num % 3 == 0){
         return "Fizz"
     }
     else if (num % 5 == 0){
@@ -41,8 +41,8 @@ function getFizzBuzz(num) {
     }
     else {
         return num
-    }*/
-    throw new Error('Not implemented');
+    }
+    //throw new Error('Not implemented');
 }
 
 
