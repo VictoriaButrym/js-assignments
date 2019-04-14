@@ -89,10 +89,11 @@ function getArrayOfPositives(arr) {
  *    [ 'cat, 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
  */
 function getArrayOfStrings(arr) {
-   /*let newarr = arr.filter(function(element){
+   let newarr = arr.filter(function(element){
       return typeof element == "string"
-      })*/
-    throw new Error('Not implemented');  
+      });
+      return newarr
+    //throw new Error('Not implemented');  
 }
 
 /**
@@ -255,12 +256,15 @@ function toArrayOfSquares(arr) {
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
 function getMovingSum(arr) {
-   /*let result = arr.reduce(function(sum, current){
-      return sum + current;
-      
+   let newarr = [];
+   newarr = arr.reduce(function(sum, current){
+      let sum =  sum + current;
+      newarr = newarr.push(sum);
+      return sum
+
    });
-   return result*/
-   throw new Error('Not implemented');
+   return newarr
+   //throw new Error('Not implemented');
 }
 
 /**
