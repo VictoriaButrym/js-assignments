@@ -30,6 +30,18 @@
  *
  */
 function getFizzBuzz(num) {
+    /*if (num % 3 == 0){
+        return "Fizz"
+    }
+    else if (num % 5 == 0){
+        return "Buzz"
+    }
+    else if (num % 3 == 0 && num % 5 == 0){
+        return "FizzBuzz"
+    }
+    else {
+        return num
+    }*/
     throw new Error('Not implemented');
 }
 
@@ -46,7 +58,7 @@ function getFizzBuzz(num) {
  *   10 => 3628800
  */
 function getFactorial(n) {
-    throw new Error('Not implemented');
+    return (n != 1) ? n * getFactorial(n - 1) : 1;
 }
 
 
@@ -63,7 +75,8 @@ function getFactorial(n) {
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
 function getSumBetweenNumbers(n1, n2) {
-    throw new Error('Not implemented');
+    
+    
 }
 
 
