@@ -46,8 +46,20 @@ function* get99BottlesOfBeer() {
  * @return {Iterable.<number>}
  *
  */
-function* getFibonacciSequence() {
-    throw new Error('Not implemented');
+function* getFibonacciSequence() { 
+    n = 39;   
+    var looping = function(n) {
+        var a = 0, b = 1, f = 1;
+        for(var i = 2; i <= n; i++) {
+            f = a + b;
+            a = b;
+            b = f;
+        }
+        return f;
+    }; 
+    looping(); 
+    //throw new Error('Not implemented');    
+
 }
 
 
@@ -126,7 +138,22 @@ function* breadthTraversalTree(root) {
  *   [ 1, 3, 5, ... ], [ -1 ] => [ -1, 1, 3, 5, ...]
  */
 function* mergeSortedSequences(source1, source2) {
-    throw new Error('Not implemented');
+    
+    let arr = source1.concat(source2);
+    if (arr.length <= 1){
+        return arr;
+    }
+
+    let pivot = arr[0];
+    let left = [];
+    let right = [];
+
+    for (let i = 0; i < arr.length; i++){
+        arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i]);
+    }
+
+    return mergeSortedSequences(left).concat(pivot, mergeSortedSequences(right))
+
 }
 
 
